@@ -5,18 +5,8 @@ var http = require('http');
 
 var path = require('path');
 
-var config = require('cloud-env');
-
 app.use(express.static(path.join(__dirname, 'public')));
 
-//openshift
-//app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
-
-//app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
-
-/*port = config.get('PORT', 8080)
-bind_address = config.get('IP','127.0.0.1')
-*/
 // Index page
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');

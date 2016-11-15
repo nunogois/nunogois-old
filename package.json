@@ -4,7 +4,6 @@
   "description": "Nuno Góis Portfolio",
   "main": "server.js",
   "dependencies": {
-    "cloud-env": "^0.2.2",
     "express": "^4.13.4"
   },
   "engine": {
