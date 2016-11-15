@@ -14,20 +14,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
 
-port = config.get('PORT', 8080)
+/*port = config.get('PORT', 8080)
 bind_address = config.get('IP','127.0.0.1')
-
+*/
 // Index page
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
 // Start server ...
-/*http.listen(process.env.PORT || 80, function(){
+http.Server(app).listen(process.env.PORT || 80, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});*/
-
-//openshift
-http.Server(app).listen(port, bind_address, function(){
-  console.log('Express server listening on ' + bind_address + ':' + port);
 });
