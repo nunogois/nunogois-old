@@ -147,24 +147,41 @@ h2 {
 }
 
 .social {
-  color: #333;
   font-size: 100px;
-
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
-  transition:.2s;
 }
 
-.fa-linkedin-square:hover {
+.fa-linkedin-square {
   color: #1f88be;
 }
 
-.fa-github-square:hover {
+.fa-github-square {
   color: #573b76;
 }
 
-.fa-envelope:hover {
+.fa-envelope {
   color: #bd880c;
+}
+
+@media (min-width: 992px) {
+  .social {
+    color: #333;
+
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+  }
+
+  .fa-linkedin-square:hover {
+    color: #1f88be;
+  }
+
+  .fa-github-square:hover {
+    color: #573b76;
+  }
+
+  .fa-envelope:hover {
+    color: #bd880c;
+  }
 }
