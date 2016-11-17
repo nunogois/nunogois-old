@@ -3,6 +3,12 @@ $(document).ready(function() {
   $('#CurrentAge').text(CurrentAge('1989-12-27'));
   $('.CurrentYear').text(new Date().getFullYear());
 
+  $(".page-scroll").click(function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $(this).blur();
+  });
+
 });
 
 function CurrentAge (birthDate) {

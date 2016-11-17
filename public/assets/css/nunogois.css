@@ -185,3 +185,7 @@ h2 {
     color: #bd880c;
   }
 }
+
+.navbar-nav > li.active > a {
+  color: rgb(175, 175, 175) !important;
+}
