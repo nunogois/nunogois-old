@@ -124,7 +124,7 @@ h2 {
   padding-bottom:50px;
 }
 
-.page-scroll {
+.navbar-nav > li > .page-scroll {
   color: #333 !important;
 }
 
