@@ -12,11 +12,6 @@ body {
   text-shadow: none;
 }
 
-/*a {
-color: #333 !important;
-font-weight: 400 !important;
-}*/
-
 .name {
   font-size: 100px;
   font-weight: 300;
@@ -28,12 +23,6 @@ font-weight: 400 !important;
   font-weight: 300;
 }
 
-/*
-.masthead-nav > .active > a, .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
-border-bottom: 1px solid #333;
-padding-bottom: 4px;
-}
-*/
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -93,9 +82,6 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-/*body {
-webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}*/
 
 #about {
   background-color: black;
