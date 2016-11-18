@@ -1,7 +1,7 @@
 {
   "name": "nunogois",
-  "version": "0.0.1",
-  "description": "Nuno Góis Portfolio",
+  "version": "0.0.2",
+  "description": "Nuno Góis - Software Developer",
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.4"
