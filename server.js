@@ -27,7 +27,7 @@ app.post('/send', function(req, res){
     from: req.body.contact_name + ' <portfolio@mg.nunogois.com>',
     to: process.env.PERSONAL_EMAIL, // my personal email address
     subject: req.body.contact_subject,
-    text: 'From: ' + req.body.contact_name + ' <' + req.body.contact_email + '>\n\nMessage:' + req.body.contact_message
+    text: 'From: ' + req.body.contact_name + ' <' + req.body.contact_email + '>\n\nMessage:\n' + req.body.contact_message
   };
 
   mailgun.messages().send(data, function (error, body) {
