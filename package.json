@@ -4,7 +4,8 @@
   "description": "Nuno Góis - Software Developer",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mailgun-js": "^0.7.13"
   },
   "engine": {
     "node": "*",
