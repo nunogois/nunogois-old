@@ -65,7 +65,12 @@ function SendEmail() {
   if (name === "" & contact_name !== "" & contact_email !== "" & isEmail(contact_email) & contact_subject !== "" & contact_message !== "")
   {
     $('.btn-send').attr('disabled', true);
+    $('#contact_name').attr('disabled', true);
+    $('#contact_email').attr('disabled', true);
+    $('#contact_subject').attr('disabled', true);
+    $('#contact_message').attr('disabled', true);
     $('.btn-send').attr('onclick', false);
+
     $.ajax({
       type: 'POST',
       data: JSON.stringify({ name: name, contact_name: contact_name, contact_email: contact_email, contact_subject: contact_subject, contact_message: contact_message }),
@@ -73,6 +78,7 @@ function SendEmail() {
       url: 'send',
       success: function(data) {
         toastr.success('Email sent sucessfully! Thank you for your message.', 'Nuno Góis');
+        ToggleEmail();
       }
     });
   }
