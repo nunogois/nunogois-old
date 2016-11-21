@@ -6,8 +6,8 @@ var http = require('http');
 var path = require('path');
 
 // body parser middleware
-//app.require('body-parser');
-//app.use(bodyParser.json());
+app.require('body-parser');
+app.use(bodyParser.json());
 
 // set public folder for assets
 app.use(express.static(path.join(__dirname, 'public')));
@@ -23,16 +23,16 @@ app.post('/send', function(req, res){
   var domain = 'mg.nunogois.com';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
-  // var data = {
-  //   from: req.body.contact_name + ' <portfolio@mg.nunogois.com>',
-  //   to: process.env.PERSONAL_EMAIL, // my personal email address
-  //   subject: req.body.contact_subject,
-  //   text: 'From: ' + req.body.contact_name + ' <' + req.body.contact_email + '>\n\nMessage:' + req.body.contact_message;
-  // };
-  //
-  // mailgun.messages().send(data, function (error, body) {
-  //   console.log(body);
-  // });
+  var data = {
+    from: req.body.contact_name + ' <portfolio@mg.nunogois.com>',
+    to: process.env.PERSONAL_EMAIL, // my personal email address
+    subject: req.body.contact_subject,
+    text: 'From: ' + req.body.contact_name + ' <' + req.body.contact_email + '>\n\nMessage:' + req.body.contact_message
+  };
+
+  mailgun.messages().send(data, function (error, body) {
+    console.log(body);
+  });
 
   res.json({success : "Email sent!", status : 200});
 });
