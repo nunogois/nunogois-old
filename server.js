@@ -6,8 +6,8 @@ var http = require('http');
 var path = require('path');
 
 // body parser middleware
-app.require('body-parser');
-app.use(bodyParser.json());
+var bodyparser = require('body-parser');
+app.use(bodyparser.json());
 
 // set public folder for assets
 app.use(express.static(path.join(__dirname, 'public')));
