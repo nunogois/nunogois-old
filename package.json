@@ -1,12 +1,10 @@
 {
-  "name": "nunogois",
-  "version": "0.0.2",
-  "description": "Nuno Góis - Software Developer",
+  "name": "node-ministack",
+  "version": "0.0.1",
+  "description": "A mini stack with the essentials to start a new NodeJS project.",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.13.4",
-    "mailgun-js": "^0.7.13"
+    "express": "^4.13.4"
   },
   "engine": {
     "node": "*",
