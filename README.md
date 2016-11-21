@@ -1,10 +1,8 @@
-### node-ministack
+### Nuno Góis Portfolio (NodeJS)
 
-A mini stack with the essentials to start a new NodeJS project.
+You can check it out here: [http://www.nunogois.com](http://www.nunogois.com)
 
-Ready to be downloaded and hosted on [Heroku](https://www.heroku.com/) with instructions on the comments.
-
-Based on my personal portfolio that you can check out here: [http://www.nunogois.com](http://www.nunogois.com).
+Simple one-page portfolio currently hosted on [Heroku](https://www.heroku.com/).
 
 ### Including:
 * [Node.js®](https://nodejs.org);
