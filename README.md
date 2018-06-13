@@ -2,7 +2,7 @@
 
 **NEW!** Check out my new website here: [https://www.nunogois.com](https://www.nunogois.com)
 
-You can still check out my old website here: [http://old.nunogois.com](http://old.nunogois.com)
+You can still check out my old website (this project) here: [http://old.nunogois.com](http://old.nunogois.com)
 
 Simple one-page portfolio currently hosted on [Heroku](https://www.heroku.com/).
 
