@@ -1,6 +1,8 @@
 ### Nuno Góis Portfolio (NodeJS)
 
-You can check it out here: [http://www.nunogois.com](http://www.nunogois.com)
+**NEW!** Check out my new website here: [https://www.nunogois.com](https://www.nunogois.com)
+
+You can check it out here: [http://old.nunogois.com](http://www.nunogois.com)
 
 Simple one-page portfolio currently hosted on [Heroku](https://www.heroku.com/).
 
