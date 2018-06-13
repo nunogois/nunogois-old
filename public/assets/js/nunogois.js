@@ -11,10 +11,23 @@ $(document).ready(function() {
 
   HideAntiBotInput();
   TextAreaAutoSize();
-
+  
   EasterEgg();
+  
+  NewWebsiteNotification();
 
 });
+
+function NewWebSiteNotification() {
+ toastr.info("Click here to go to my <b>new</b> website!", "New website available!", {
+   "closeButton": true, 
+   "extendedTimeOut": 0, 
+   "timeOut": 0, 
+   "onclick": function() { 
+     window.location.href='https://www.nunogois.com' 
+   }
+ }); 
+}
 
 function CurrentAge (birthDate) {
   var birthDate = new Date(birthDate);
