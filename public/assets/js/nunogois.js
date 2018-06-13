@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 });
 
-function NewWebSiteNotification() {
+function NewWebsiteNotification() {
  toastr.info("Click here to go to my <b>new</b> website!", "New website available!", {
    "closeButton": true, 
    "extendedTimeOut": 0, 
